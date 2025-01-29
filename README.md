@@ -1,8 +1,3 @@
-# README
-
-## Project: Calculator Application
-
-### Author
 **Name:** Daniel John Jacob  
 **PRN:** 23070126027  
 **Batch:** 2023-27, AIML A2  
