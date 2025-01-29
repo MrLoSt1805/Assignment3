@@ -26,10 +26,24 @@ public class Calculator {
         return a / b;
     }
 
-    // Calculates the nth Fibonacci number using recursion.
-    public int fibonacci(int n) {
-        if (n <= 1) return n;
-        return fibonacci(n - 1) + fibonacci(n - 2);
+        // Prints the first n Fibonacci numbers.
+    public void printFibonacciSeries(int n) {
+    	if (n <= 0) {
+            System.out.println("Please enter a positive number.");
+            return;
+    	}
+
+    	int a = 0, b = 1;
+
+    	// Print the first n Fibonacci numbers
+    	System.out.print("Fibonacci Series: ");
+    	for (int i = 0; i < n; i++) {
+            System.out.print(a + " ");
+       	    int next = a + b; // Calculate the next Fibonacci number
+            a = b; // Move to the next number
+            b = next; // Move to the next number
+    	}
+    	System.out.println();
     }
 
     // Calculates the sum of all elements in the array.
